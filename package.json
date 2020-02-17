@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "server": "npm run build && NODE_ENV=production pm2 start server.js",
+    "server": "npm run build && pm2 start server.js",
     "build": "next build",
     "start": "next start",
     "export": "next build && next export"
@@ -31,6 +31,17 @@
     "semantic-ui-react": "^0.88.2"
   },
   "devDependencies": {
+    "express": "^4.17.1",
     "svg-react-loader": "^0.4.6"
-  }
+  },
+  "routes": [
+    {
+      "src": "/index",
+      "dest": "/"
+    },
+    {
+      "src": "/lotto/order",
+      "dest": "/lotto/order"
+    }
+  ]
 }

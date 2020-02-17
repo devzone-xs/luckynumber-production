@@ -1,0 +1,109 @@
+@import "./global.scss";
+
+.numstate-component {
+  display: flex;
+}
+
+.modal-bill-confirm {
+  display: flex;
+  flex-direction: column;
+  .top {
+    margin: 0 0 10px 0;
+    display: flex;
+    justify-content: space-between;
+    .field {
+      label {
+        margin-right: 10px;
+      }
+      span {
+        color: red;
+      }
+    }
+  }
+  .down {
+    display: flex;
+    justify-content: space-between;
+  }
+  .left {
+    width: 100%;
+    padding-right: 10px;
+  }
+  .right {
+    width: 100%;
+    padding-left: 10px;
+  }
+  thead th {
+    padding: 5px 10px !important;
+  }
+  tbody td {
+    padding: 5px 10px !important;
+  }
+  .A {
+    width: 50px;
+    min-width: 50px;
+  }
+  .B {
+    width: 50px;
+    min-width: 50px;
+  }
+  .C {
+    width: 70px;
+    min-width: 70px;
+  }
+}
+
+.block-icon {
+  user-select: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  height: 25px;
+  min-height: 25px;
+  width: 25px;
+  min-width: 25px;
+  .lock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    g path {
+      fill: red;
+    }
+  }
+}
+.block-icon:hover {
+  g path {
+    fill: $main;
+  }
+}
+
+.input-time {
+  $width: 120px;
+  .ui.selection.dropdown {
+    width: $width !important;
+    min-width: $width !important;
+    max-width: $width !important;
+  }
+  .minute {
+    width: $width !important;
+    min-width: $width !important;
+    max-width: $width !important;
+  }
+}
+
+.numset {
+  .del {
+    user-select: none;
+    cursor: pointer;
+  }
+  .del:hover {
+    color: red;
+  }
+  .off {
+    color: red;
+  }
+  .limit {
+    color: #ffb400;
+  }
+}

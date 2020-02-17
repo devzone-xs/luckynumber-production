@@ -1,0 +1,140 @@
+$main: #2185d0;
+$bar: #333645;
+$bar-sub: #424556;
+$second: #cdced2;
+$third: #888888;
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0 !important;
+  font-family: "Prompt", sans-serif;
+}
+
+div,
+a,
+textarea {
+  font-weight: normal;
+  font-family: "Prompt", sans-serif;
+}
+
+input[type="text"] {
+  font-family: "Prompt", sans-serif !important;
+}
+
+.card {
+  border-radius: 6px;
+  border: 1px #cdced2 solid;
+  background-color: #fff;
+  overflow: hidden;
+  margin: 0 0 10px 0;
+}
+
+.card-x {
+  border-radius: 6px;
+  border: 1px #cdced2 solid;
+  background-color: #fff;
+  margin: 0 0 10px 0;
+}
+
+.select {
+  width: 70px !important;
+  min-width: 70px !important;
+}
+.select.mon {
+  width: 100px !important;
+  min-width: 100px !important;
+}
+.c-blue {
+  color: #448aff;
+}
+.c-gray {
+  color: #c2c2c2;
+}
+.c-red {
+  color: red;
+}
+.c-orange {
+  color: #f2711c;
+}
+.c-yellow {
+  color: #fda836;
+}
+.c-green {
+  color: #2ecc40;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.f-bold {
+  font-weight: bold;
+  background: #f9fafb;
+}
+
+$sizes: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 14, 15, 16, 18, 20, 22, 24, 25, 26, 28, 30, 32, 35, 38, 40, 42, 45, 46, 48,
+  50, 55, 60, 65, 70, 75, 80, 85, 90, 95;
+
+@each $size in $sizes {
+  //Font
+  .f-#{$size} {
+    font-size: #{$size}px;
+  }
+
+  .w-#{$size} {
+    width: #{$size}% !important;
+  }
+
+  // Margin
+  .ma-#{$size} {
+    margin: #{$size}px !important;
+  }
+  .mx-#{$size} {
+    margin-left: #{$size}px !important;
+    margin-right: #{$size}px !important;
+  }
+  .my-#{$size} {
+    margin-top: #{$size}px !important;
+    margin-bottom: #{$size}px !important;
+  }
+  .ml-#{$size} {
+    margin-left: #{$size}px !important;
+  }
+  .mr-#{$size} {
+    margin-right: #{$size}px !important;
+  }
+  .mt-#{$size} {
+    margin-top: #{$size}px !important;
+  }
+  .mb-#{$size} {
+    margin-bottom: #{$size}px !important;
+  }
+
+  //Padding
+  .pa-#{$size} {
+    padding: #{$size}px !important;
+  }
+  .px-#{$size} {
+    padding-left: #{$size}px !important;
+    padding-right: #{$size}px !important;
+  }
+  .py-#{$size} {
+    padding-top: #{$size}px !important;
+    padding-bottom: #{$size}px !important;
+  }
+  .pl-#{$size} {
+    padding-left: #{$size}px !important;
+  }
+  .pr-#{$size} {
+    padding-right: #{$size}px !important;
+  }
+  .pt-#{$size} {
+    padding-top: #{$size}px !important;
+  }
+  .pb-#{$size} {
+    padding-bottom: #{$size}px !important;
+  }
+}
